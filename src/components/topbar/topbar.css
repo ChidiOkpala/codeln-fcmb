@@ -1,0 +1,211 @@
+
+
+.topbar{
+    width:93%;
+    margin-left: 7%;
+    height: 86px;
+    background-color: #FBFBFB;
+    display:flex;
+}
+
+@media screen and (max-width:1100px){
+    .topbar{
+        width:100%;
+        margin-left:0%;
+    }
+}
+
+.menu img{
+    padding:32px;
+}
+
+.fcmb{
+    display:flex;
+}
+
+.fcmb img{
+    /* width: 33px;
+    height: 30px; */
+    padding-top:25px;
+    padding-bottom: 25px;
+}
+
+.fcmb h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    /* Dark-blue */
+    color: #03293D;
+    padding-left:10px;
+}
+
+.border{
+    width: 30px;
+    height: 2px;
+    margin-top:40px;
+    margin-left:10px;
+    opacity: 0.1;
+    background-color: #2D2D2D;
+    transform: rotate(90deg);
+}
+
+.border div{
+    width:100%;
+    height:2px;
+    color: #2D2D2D;
+}
+
+.search{
+    display:flex;
+    margin-top:32px;
+    margin-left:20px;
+}
+
+.search img{
+    width: 20px;
+    height: 20px;
+}
+
+.search input{
+    border:none;
+    height:20px;
+    margin-left:5px;
+    background-color: #FBFBFB;
+}
+
+input:focus{
+    outline: none;
+}
+
+.bell{
+    margin-top:28px;
+    margin-left:15%;
+}
+
+.owner{
+    background-color: #4DBD98;
+    padding:2px;
+    display:flex;
+    width: 74px;
+    height: 21px;
+    margin-top:30px;
+    margin-left:30px !important;
+    border-radius:5px;
+}
+
+.owner img{
+    padding-left:5px;
+    padding-top:3px;
+    width:12px;
+    height:15px;
+}
+
+.owner h6{
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    color:#FFFFFF !important;
+    margin-top:0px;
+    padding-top:2px;
+    padding-left:15px;
+}
+
+.badge{
+    margin-top:30px;
+    margin-left:20px;
+}
+
+.user{
+    display:flex;
+    margin-left:30px;
+}
+
+.user img{
+    width:40px;
+    height:40px;
+    margin-top:25px;
+}
+
+.userdetails{
+    display:flex;
+    flex-direction:column;
+    margin-left:10px;
+    margin-top:5px;
+}
+
+.userdetails h5{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #03293D;
+    margin-bottom:0;
+}
+
+.userdetails h6{
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    color: #23B3E8;
+    margin-top:0;
+}
+
+.user .topbararrow {
+    width:7.5px;
+    height:3.5px;
+    margin-top:50px;
+    margin-left: 20px;  
+    color: #2D2D2D;
+}
+
+@media screen and (max-width:1000px){
+    .border{
+        margin-left:10px;   
+    }
+
+    .search{
+        margin-left:5px !important;
+    }
+
+    .bell{
+        display:none;
+    }
+
+    .badge{
+        display:none;
+    }
+
+    .owner{
+        display:none;
+    }
+    .menu img{
+        display:none;
+    }
+}
+
+@media screen and (max-width:700px){
+    .search{
+        display:none;
+    }
+    .border{
+        display:none;
+    }
+    .fcmb{
+        margin-left:5px;
+    }
+    .fcmb h3{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        /* Dark-blue */
+        color: #03293D;
+        padding-left:10px;
+    }
+}
+
+/* End of Top-bar */
