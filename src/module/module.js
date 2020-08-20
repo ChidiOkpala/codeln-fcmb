@@ -46,7 +46,7 @@ class Page extends React.Component {
             <div className="app">
                 <div className="main-flex">
                     <Sidenav zeroimage={this.state.zeroimage}/>
-                    <div className="mainwidth">
+                    <div className="main-width">
                         <Topnav />      
                         <Navline active={this.state.active}/>
       

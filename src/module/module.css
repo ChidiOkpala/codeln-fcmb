@@ -6,7 +6,7 @@
     width:100%;
 }
 
-.mainwidth{
+.main-width{
     display:flex;
     flex-direction: column;
     height:931px;
@@ -139,7 +139,7 @@
 }
 
 @media screen and (max-width:1100px){
-    .mainwidth{
+    .main-width{
         display:flex;
         flex-direction: column;
         height:931px !important;
