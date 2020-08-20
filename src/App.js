@@ -1,5 +1,6 @@
 import React from 'react';
 import Page from './page/page';
+import Modules from './module/module';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -7,9 +8,7 @@ function App() {
     <div className="app">
       <Switch>
         <Route exact path='/' component={Page}/>
-        {/* <Route exact path='/discover' component={Discover}/>
-        <Route exact path='/pricing' component={Pricing}/>
-        <Route exact path='/sign-up' component={Signup}/> */}
+        <Route exact path='/module' component={Modules}/>
       </Switch>
     </div>
   );

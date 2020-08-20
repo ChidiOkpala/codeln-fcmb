@@ -9,29 +9,35 @@ import sidenavarrow from './images/sidenav/sidenavarrow.png';
 
 
 
-function Sidenav (){
-    return (
-        <div className="sidenav">
-                      <div className="logo">
-                          <img alt="logo" src={logo}/>
-                      </div>
-                      <div className="sideimg">
-                          <img alt="img" className="sideimgborder" src={firstnavimg}/>
-                          <img alt="img" src={secondnavimg}/>
-                          <img alt="img" src={thirdnavimg}/>
-                      </div>
-                      <div className="sidenavthirdsection">
-                          <a className="pn" href="#">PN</a>
-                          <a className="ji">JI</a>
-                          <a className="lg">LG</a>
-                          <a className="aw1">AW</a>
-                          <a className="aw2">AW</a>
-                      </div>
-                      <div className="sidenavarrow">
-                          <img src={sidenavarrow} alt="arrow"/>
-                      </div>
-                  </div>
-    )
+class Sidenav extends React.Component{
+    constructor(props){
+        super(props);
+    }
+    render (){
+        return (
+            <div className="sidenav">
+                <div className="logo">
+                    <img alt="logo" src={logo}/>
+                </div>
+                <div className="sideimg">
+                    <img alt="" src={this.props.zeroimage}/>
+                    <img alt="img" className="sideimgborder" src={firstnavimg} style={this.props.classes}/>
+                    <img alt="img" src={secondnavimg}/>
+                    <img alt="img" src={thirdnavimg}/>
+                </div>
+                <div className="sidenavthirdsection">
+                    <a className="pn" href="#">PN</a>
+                    <a className="ji">JI</a>
+                    <a className="lg">LG</a>
+                    <a className="aw1">AW</a>
+                    <a className="aw2">AW</a>
+                </div>
+                <div className="sidenavarrow">
+                    <img src={sidenavarrow} alt="arrow"/>
+                </div>
+            </div>
+        )
+    }
 }
 
 export default Sidenav;

@@ -11,20 +11,24 @@ import Testcase from '../components/testcase/testcase';
 
 class Page extends React.Component {
     constructor(props){
-        super(props); 
+        super(props);
+        this.state = {
+            active : "Test"
+        } 
     }
     
     render(){
+        const classes = {marginTop:"35px"};
         // if(this.state.option === "Pass"){
         //     backgroundColor: "red"
         // }
         return (
             <div className="app">
                 <div className="main-flex">
-                    <Sidenav />
+                    <Sidenav classes={classes}/>
                     <div className="mainwidth">
                         <Topnav />      
-                        <Navline />
+                        <Navline active={this.state.active}/>
       
                         <div className="modules-test-overview">
                             <Module />
